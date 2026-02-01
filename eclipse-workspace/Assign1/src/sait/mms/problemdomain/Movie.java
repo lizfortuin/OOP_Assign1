@@ -1,33 +1,33 @@
 package sait.mms.problemdomain;
 
 public class Movie {
+	private String title;
 	private int duration;
-	private String name;
 	private int year;
 	
-	public Movie(int duration, String name, int year) {
+	public Movie(String title, int duration, int year) {
+		this.title = title;
 		this.duration = duration;
-		this.name = name;
 		this.year = year;
 	}
-	
+
+	public String getTitle() {
+		return title;}
 	public int getDuration(){
 		return duration;}
-	public String getName() {
-		return name;}
 	public int getYear() {
 		return year;}
-	
+
+	public void setTitle(String title) {
+		this.title = title;}
 	public void setDuration(int duration) {
 		this.duration = duration;}
-	public void setName(String name) {
-		this.name = name;}
 	public void setYear(int year) {
 		this.year = year;}
 	
 	@Override 
 	public String toString() {
-		return duration + ", " + name + ", " + year;
+		return title + ", " + duration + ", " + year;
 	}
 	
 }
