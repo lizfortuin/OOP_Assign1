@@ -98,12 +98,16 @@ public class MovieManager {
 			case 2:
 				generateMovieListInYear();
 				break;
+			case 3:
+				generateRandomMovieList();
+				break;
 			case 4:
 				saveMovieListToFile();
 				System.out.println("Goodbye.");
 				break;
 			default:
 				System.out.println("Invalid choice.");
+				break;
 			}
 		}
 	}
