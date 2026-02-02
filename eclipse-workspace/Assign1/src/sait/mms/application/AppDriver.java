@@ -9,7 +9,7 @@ public class AppDriver {
 		
 		//create new manager object
 		MovieManager manager = new MovieManager();
-		
+		manager.loadMovieList();
 		//call displayMenu method from the MovieManager class
 		manager.displayMenu();
 
